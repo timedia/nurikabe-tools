@@ -25,7 +25,7 @@ module Nurikabe
           YAML
             .safe_load(file, symbolize_names: true)
             .flat_map { |group| group[:enabled] ? group[:urls] : [] }
-            .sort
+            .sort { |a, b| a.delete_prefix('*.') <=> b.delete_prefix('*.') }
             .uniq
             .join(@separator)
         end
