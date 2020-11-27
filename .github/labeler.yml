@@ -1,2 +1,4 @@
 generate_ignorelist:
   - generate_ignorelist/**
+proxy_pac:
+  - proxy_pac/**
