@@ -1,0 +1,103 @@
+---
+- group: Atlassian
+  enabled: true
+  urls:
+    - "*.atlassian.com"
+    - "*.atlassian.io"
+    - "*.atlassian.net"
+    - "*.jira.com"
+
+- group: AWS
+  enabled: true
+  urls:
+    - aws.amazon.com
+    - "*.aws.amazon.com"
+    - "*.amazonaws.com"
+    - "*.cloudfront.net"
+
+- group: Backlog
+  description: https://support-ja.backlog.com/hc/ja/articles/360035645554-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%A7%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E3%81%99%E3%81%B9%E3%81%A6%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84
+  enabled: true
+  urls:
+    - backlog.com
+    - "*.backlog.com"
+    - backlog.jp
+    - "*.backlog.jp"
+    - "*.nulab.jp"
+    - cacoo.com
+    - typetalk.com
+    - typekit.net
+    - "*.stripe.com"
+    - "*.intercom.io"
+    - "*.intercomcdn.com"
+    - "*.visualwebsiteoptimizer.com"
+
+- group: Slack
+  description: https://timedia.slack.com/help/urls
+  enabled: true
+  urls:
+    - "*.chime.aws"
+    - "*.lb.slack-msgs.com"
+    - "a.slack-edge.com"
+    - "a.slack-imgs.com"
+    - "admin.slack.com"
+    - "alpha.slack.com"
+    - "api.slack.com"
+    - "app.slack.com"
+    - "assets.slack.com"
+    - "auth.slack.com"
+    - "avatars.slack-edge.com"
+    - "b.slack-edge.com"
+    - "b.slack-imgs.com"
+    - "beta.slack.com"
+    - "blog.slack.com"
+    - "ca.slack-edge.com"
+    - "downloads.slack-edge.com"
+    - "edgeapi.slack.com"
+    - "email.slack.com"
+    - "email2.slack.com"
+    - "email3.slack.com"
+    - "email4.slack.com"
+    - "emoji.slack-edge.com"
+    - "example.slack.com"
+    - "files-edge.slack.com"
+    - "files-origin.slack.com"
+    - "files.slack.com"
+    - "global-upload-edge.slack.com"
+    - "go-beta.slack.com"
+    - "go-debug.slack.com"
+    - "go.slack.com"
+    - "help.slack.com"
+    - "hooks.slack.com"
+    - "join.slack.com"
+    - "my.slack.com"
+    - "oauth2.slack.com"
+    - "platform-tls-client.slack.com"
+    - "platform.slack-edge.com"
+    - "slack-calls*.slack-core.com"
+    - "slack-email.slack.com"
+    - "slack-files.com"
+    - "slack-imgs.com"
+    - "slack-infra.slack.com"
+    - "slack-redir.com"
+    - "slack-redir.net"
+    - "slack.com"
+    - "slack.global.ssl.fastly.net"
+    - "slackb.com"
+    - "spellcheck.slack-edge.com"
+    - "status.slack.com"
+    - "timedia.slack.com"
+    - "try.slack.com"
+    - "universal-upload-edge.slack.com"
+    - "universal.slack-core.com"
+    - "upload.slack.com"
+    - "wss-backup.slack.com"
+    - "wss-mobile.slack.com"
+    - "wss-primary.slack.com"
+
+- group: Zoom.us
+  description: https://support.zoom.us/hc/ja/articles/201362683-Zoom%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB%E3%81%BE%E3%81%9F%E3%81%AF%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A
+  enabled: true
+  urls:
+    - zoom.us
+    - "*.zoom.us"

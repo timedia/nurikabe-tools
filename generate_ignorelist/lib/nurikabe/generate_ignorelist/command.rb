@@ -13,11 +13,22 @@ module Nurikabe
         @path = File.expand_path('../../../config/default.yaml', __dir__)
         @separator = ','
 
-        option_parser.parse(args)
+        rest = option_parser.parse(args)
+        return if rest.empty?
+
+        warn option_parser.help
+        exit 1
       end
 
       def call
-        [@path, @separator]
+        File.open(@path, 'r') do |file|
+          YAML
+            .safe_load(file, symbolize_names: true)
+            .flat_map { |group| group[:enabled] ? group[:urls] : [] }
+            .sort
+            .uniq
+            .join(@separator)
+        end
       end
 
       private
