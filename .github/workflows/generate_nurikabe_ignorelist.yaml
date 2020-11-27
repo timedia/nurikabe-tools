@@ -1,0 +1,42 @@
+name: Generate ignorelist for nurikabe
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/generate_nurikabe_ignorelist.yaml
+      - generate_ignorelist/**
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/generate_nurikabe_ignorelist.yaml
+      - generate_ignorelist/**
+
+jobs:
+  generate:
+    name: Generate ignorelist for ${{ matrix.os.name }} user
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os:
+          - name: Windows
+            separator: ";"
+          - name: macOS
+            separator: ","
+    steps:
+      - name: Checkout codes
+        uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.x
+
+      - name: Generate ignorelist
+        run: bin/generate_nurikabe_ignorelist -s "${{ matrix.os.separator }}" > ignorelist.txt
+        working-directory: generate_ignorelist
+
+      - name: Upload generated ignorelist
+        uses: actions/upload-artifact@v2
+        with:
+          name: ignorelist_for_${{ matrix.os.name }}
+          path: generate_ignorelist/ignorelist.txt
