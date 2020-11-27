@@ -9,10 +9,19 @@
 - group: Atlassian
   enabled: true
   urls:
+    - bitbucket.org
+    - bitbucket-connect-icons.s3.amazonaws.com
     - "*.atlassian.com"
     - "*.atlassian.io"
     - "*.atlassian.net"
+    - "*.atl-paas.net"
+    - "*.bitbucket.org"
+    - "*.cloudfront.net"
+    - "*.gravatar.com"
     - "*.jira.com"
+    - "*.newrelic.com"
+    - "*.nr-data.net"
+    - "*.statuspage.io"
 
 - group: AWS
   enabled: true
@@ -27,17 +36,69 @@
   enabled: true
   urls:
     - backlog.com
-    - "*.backlog.com"
     - backlog.jp
-    - "*.backlog.jp"
-    - "*.nulab.jp"
     - cacoo.com
     - typetalk.com
     - typekit.net
+    - "*.backlog.com"
+    - "*.backlog.jp"
+    - "*.nulab.jp"
     - "*.stripe.com"
     - "*.intercom.io"
     - "*.intercomcdn.com"
     - "*.visualwebsiteoptimizer.com"
+
+- group: GitHub
+  enabled: true
+  urls:
+    - github.com
+    - "*.github.com"
+    - "*.githubapp.com"
+    - "*.githubassets.com"
+    - "*.githubusercontent.com"
+
+- group: GitLab
+  enabled: true
+  urls:
+    - gitlab.com
+    - "*.gitlab.com"
+    - "*.gitlab.net"
+    - "*.gitlab-static.net"
+
+- group: Google
+  enabled: true
+  urls:
+    - gmail.com
+    - "*.google.com"
+    - "*.google.co.jp"
+    - "*.google-analytics.com"
+    - "*.googleadmanager.com"
+    - "*.googleadservices.com"
+    - "*.googleapis.com"
+    - "*.googleusercontent.com"
+    - "*.gstatic.com"
+    - "*.youtube.com"
+
+- group: Jobcan
+  enabled: true
+  urls:
+    - cdnjs.cloudflare.com
+    - fonts.googleapis.com
+    - fonts.gstatic.com
+    - "*.jobcan.jp"
+    - "*.marketo.net"
+
+- group: Localhost
+  enabled: true
+  urls:
+    - localhost
+
+- group: Miro
+  enabled: true
+  urls:
+    - miro.com
+    - mirostatic.com
+    - "*.miro.com"
 
 - group: Slack
   description: https://timedia.slack.com/help/urls
@@ -56,6 +117,25 @@
     - "*.slack-core.com"
     - "*.slack-edge.com"
     - "*.slack-imgs.com"
+
+- group: SNS
+  enabled: true
+  urls:
+    - facebook.com
+    - fonts.gstatic.com
+    - twitter.com
+    - www.google-analytics.com
+    - "*.facebook.com"
+    - "*.fbcdn.net"
+    - "*.gravatar.com"
+    - "*.twimg.com"
+    - "*.twitter.com"
+    - "*.vein.space"
+
+- group: xip.io
+  enabled: true
+  urls:
+    - "*.xip.io"
 
 - group: Zoom.us
   description: https://support.zoom.us/hc/ja/articles/201362683-Zoom%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB%E3%81%BE%E3%81%9F%E3%81%AF%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A
