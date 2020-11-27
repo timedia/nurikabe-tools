@@ -35,8 +35,12 @@ module Nurikabe
 
       def option_parser
         @option_parser ||= OptionParser.new do |opts|
-          opts.on('-f', '--file=FILE') { |path| @path = path }
-          opts.on('-s', '--separator=SEP') { |separator| @separator = separator }
+          opts.on(
+            '-f',
+            '--file=FILE',
+            'Specify the yaml file name of the ignorelist definition. default: config/default.yaml'
+          ) { |path| @path = path }
+          opts.on('-s', '--separator=SEP', 'Specify the separator charactor.') { |separator| @separator = separator }
           opts.version = VERSION
         end
       end
