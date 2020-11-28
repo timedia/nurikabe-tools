@@ -12,6 +12,10 @@ module Nurikabe
           ENV['SOCKS_PROXY_PORT'] || 1080
         end
 
+        def socks_proxy_targets
+          ENV.fetch('SOCKS_PROXY_TARGETS', '').split(',')
+        end
+
         private
 
         def ifaddr

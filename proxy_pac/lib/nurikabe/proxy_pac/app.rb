@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'json'
 require_relative 'environment'
 
 module Nurikabe
@@ -20,10 +21,15 @@ module Nurikabe
 
       def proxy_pac
         <<~__EOF__
+          var targets = #{socks_proxy_targets};
           var proxySettingsString = "SOCKS #{socks_proxy_host}:#{socks_proxy_port}";
 
           function FindProxyForURL(url, host) {
-            return proxySettingsString;
+            if (targets.some(target => shExpMatch(host, target))) {
+              return proxySettingsString;
+            } else {
+              return "DIRECT";
+            }
           }
         __EOF__
       end
@@ -34,6 +40,10 @@ module Nurikabe
 
       def socks_proxy_port
         Environment.socks_proxy_port
+      end
+
+      def socks_proxy_targets
+        Environment.socks_proxy_targets.to_json
       end
     end
   end
