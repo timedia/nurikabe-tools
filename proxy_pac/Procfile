@@ -1,0 +1,2 @@
+web: RACK_ENV=production bundle exec rackup --host ${WEB_HOST:-0.0.0.0} --port ${WEB_PORT:-9292}
+ssh: ssh -gND ${SOCKS_PROXY_PORT:-1080} ${SOCKS_PROXY_REMOTE}
