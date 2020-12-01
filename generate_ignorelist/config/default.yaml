@@ -23,12 +23,14 @@
     - "*.nr-data.net"
     - "*.statuspage.io"
 
-- group: AWS
+- group: Amazon
   enabled: true
   urls:
     - aws.amazon.com
-    - "*.aws.amazon.com"
+    - "*.amazon.com"
+    - "*.amazon.co.jp"
     - "*.amazonaws.com"
+    - "*.aws.amazon.com"
     - "*.cloudfront.net"
 
 - group: Backlog
@@ -92,6 +94,165 @@
   enabled: true
   urls:
     - localhost
+
+- group: Microsoft
+  description: |
+    https://docs.microsoft.com/ja-jp/azure/security/fundamentals/azure-domains
+    https://docs.microsoft.com/ja-jp/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+  enabled: true
+  urls:
+      # https://docs.microsoft.com/ja-jp/azure/security/fundamentals/azure-domains
+    - "*.azure-api.net"
+    - "*.azure-mobile.net"
+    - "*.azure.com"
+    - "*.azurecontainer.io"
+    - "*.azurecr.io"
+    - "*.azureedge.net"
+    - "*.azurefd.net"
+    - "*.azurewebsites.net"
+    - "*.cloudapp.net"
+    - "*.msecnd.net"
+    - "*.onmicrosoft.com"
+    - "*.trafficmanager.net"
+    - "*.visualstudio.com"
+    - "*.windows.net"
+      # https://docs.microsoft.com/ja-jp/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide
+    - a.wunderlist.com
+    - accounts.google.com
+    - api.dropboxapi.com
+    - api.login.yahoo.com
+    - api.meetup.com
+    - app.adjust.com
+    - app.box.com
+    - apps.identrust.com
+    - bit.ly
+    - cacerts.digicert.com
+    - cert.int-x3.letsencrypt.org
+    - connect.facebook.net
+    - crl.globalsign.com
+    - crl.globalsign.net
+    - crl.identrust.com
+    - crl.microsoft.com
+    - crl3.digicert.com
+    - crl4.digicert.com
+    - data.flurry.com
+    - graph.facebook.com
+    - isrg.trustid.ocsp.identrust.com
+    - m.facebook.com
+    - mail.google.com
+    - ocsp.digicert.com
+    - ocsp.globalsign.com
+    - ocsp.int-x3.letsencrypt.org
+    - ocsp.msocsp.com
+    - ocsp2.globalsign.com
+    - ocspx.digicert.com
+    - platform.linkedin.com
+    - play.google.com
+    - secure.globalsign.com
+    - secure.meetup.com
+    - social.yahooapis.com
+    - staffhub.ms
+    - sway.com
+    - www.acompli.com
+    - www.digicert.com
+    - www.dropbox.com
+    - www.evernote.com
+    - www.google-analytics.com
+    - www.googleapis.com
+    - www.wunderlist.com
+    - www.sway.com
+    - www.youtube.com
+    - "*.acompli.net"
+    - "*.ad.atdmt.com"
+    - "*.aka.ms"
+    - "*.akadns.net"
+    - "*.akamaihd.net"
+    - "*.aspnetcdn.com"
+    - "*.assets-yammer.com"
+    - "*.atdmt.com"
+    - "*.apple.com"
+    - "*.assets-yammer.com"
+    - "*.azure-apim.net"
+    - "*.azure.com"
+    - "*.azure.net"
+    - "*.azureedge.net"
+    - "*.bing.com"
+    - "*.bing.net"
+    - "*.cloudapp.net"
+    - "*.cloudappsecurity.com"
+    - "*.edgesuite.net"
+    - "*.entrust.net"
+    - "*.geotrust.com"
+    - "*.getmicrosoftkey.com"
+    - "*.gfx.ms"
+    - "*.helpshift.com"
+    - "*.hockeyapp.net"
+    - "*.localytics.com"
+    - "*.lync.com"
+    - "*.live.com"
+    - "*.live.net"
+    - "*.microsoft.com"
+    - "*.microsoftazuread-sso.com"
+    - "*.microsoftonline-p.com"
+    - "*.microsoftonline-p.net"
+    - "*.microsoftonline.com"
+    - "*.microsoftstream.com"
+    - "*.microsoftusercontent.com"
+    - "*.msauth.net"
+    - "*.msauthimages.net"
+    - "*.msecnd.net"
+    - "*.msedge.net"
+    - "*.msft.net"
+    - "*.msftauth.net"
+    - "*.msftauthimages.net"
+    - "*.msftidentity.com"
+    - "*.msidentity.com"
+    - "*.msn.com"
+    - "*.msocdn.com"
+    - "*.mstea.ms"
+    - "*.o365weve.com"
+    - "*.oaspapps.com"
+    - "*.office.com"
+    - "*.office.net"
+    - "*.office365.com"
+    - "*.omniroot.com"
+    - "*.onedrive.com"
+    - "*.onestore.ms"
+    - "*.onenote.net"
+    - "*.onmicrosoft.com"
+    - "*.optimizely.com"
+    - "*.outlook.com"
+    - "*.outlookmobile.com"
+    - "*.phonefactor.net"
+    - "*.powerapps.com"
+    - "*.public-trust.com"
+    - "*.sfbassets.com"
+    - "*.sfx.ms"
+    - "*.sharepoint.com"
+    - "*.sharepointonline.com"
+    - "*.signalr.net"
+    - "*.skype.com"
+    - "*.skypeassets.com"
+    - "*.skypeforbusiness.com"
+    - "*.svc.ms"
+    - "*.sway-cdn.com"
+    - "*.sway-extensions.com"
+    - "*.symcb.com"
+    - "*.symcd.com"
+    - "*.tenor.com"
+    - "*.trafficmanager.net"
+    - "*.uservoice.com"
+    - "*.verisign.com"
+    - "*.verisign.net"
+    - "*.visualstudio.com"
+    - "*.virtualearth.net"
+    - "*.windows-ppe.net"
+    - "*.windows.com"
+    - "*.windows.net"
+    - "*.windowsazure.com"
+    - "*.yammer.com"
+    - "*.yammerusercontent.com"
+    - "*.ytimg.com"
 
 - group: Miro
   enabled: true
