@@ -71,6 +71,7 @@
   enabled: true
   urls:
     - gmail.com
+    - "*.gmail.com"
     - "*.google.com"
     - "*.google.co.jp"
     - "*.google-analytics.com"
