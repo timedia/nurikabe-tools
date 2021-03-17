@@ -33,6 +33,15 @@ NOTE: Public な server 上で動かすのはやめてください
 * 設定 -> Wi-Fi -> SSID 右の (i) -> プロキシを構成 -> 自動
   * URL に `http://${WEB_HOST}:${WEB_PORT}/proxy.pac` を設定する
 
+#### Android
+##### Xperia SO-01J
+* 設定 -> ネットワークとインターネット -> Wi-Fi -> 使用しているWi-Fiを長押し -> ネットワークの変更 -> プロキシ -> プロキシの自動設定
+  * PAC URL に `http://${WEB_HOST}:${WEB_PORT}/proxy.pac` を設定する
+
+##### Pixel2
+* 設定 -> ネットワークとインターネット -> Wi-Fi -> 使用しているWi-Fiの右側の歯車アイコン -> 右上のペンアイコン -> プロキシ -> プロキシの自動設定
+  * PAC URL に `http://${WEB_HOST}:${WEB_PORT}/proxy.pac` を設定する
+
 ## Requirements
 ### PC (macOS/Linux)
   * Ruby 2.6.0 or later
